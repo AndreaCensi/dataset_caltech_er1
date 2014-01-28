@@ -1,0 +1,53 @@
+- id: "er1b-${log}"
+  desc: "ER1 dataset ${log} (conf B)"
+  code: 
+  - rawlogs.library.Multiple
+  - annotations: 
+        robot: er1b
+    logs:
+    - - rawlogs_hdflog.HDFRawLog
+      - "file:filename": "er1-logs_compact_better/conf2/${log}/small_data.h5"
+    - - procgraph_rawlogs.VideoLog
+      - "file:filename": "er1-logs_compact_better/conf2/${log}/video0.avi"
+        signal_name: video0
+    - - procgraph_rawlogs.VideoLog
+      - "file:filename": "er1-logs_compact_better/conf2/${log}/video1.avi"
+        signal_name: video1
+
+- id: "er1a-${log}"
+  desc: "ER1 dataset ${log} (conf A)"
+  code: 
+  - rawlogs.library.Multiple
+  - annotations: 
+        robot: er1a
+    logs:
+    - - rawlogs_hdflog.HDFRawLog
+      - "file:filename": "er1-logs_compact_better/conf1/${log}/small_data.h5"
+    - - procgraph_rawlogs.VideoLog
+      - "file:filename": "er1-logs_compact_better/conf1/${log}/video0.avi"
+        signal_name: video0
+    - - procgraph_rawlogs.VideoLog
+      - "file:filename": "er1-logs_compact_better/conf1/${log}/video1.avi"
+        signal_name: video1
+
+
+- id: er1b-20100615_184406
+- id: er1b-20100615_201500
+- id: er1b-20100615_202030
+- id: er1b-20100615_202107
+- id: er1b-20100615_202321
+- id: er1b-20100615_202916
+- id: er1b-20100615_203552
+- id: er1b-20100615_233658
+- id: er1b-20100615_234934
+- id: er1b-20100615_235829
+- id: er1b-20100616_000059
+- id: er1b-20100616_175627
+- id: er1b-20100616_182001       
+
+- id: er1a-20100605_172139
+- id: er1a-20100605_172710
+- id: er1a-20100605_173337
+- id: er1a-20100605_173504
+- id: er1a-20100605_173833
+
