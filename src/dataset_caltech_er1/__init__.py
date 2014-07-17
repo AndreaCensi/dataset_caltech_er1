@@ -5,7 +5,7 @@ def jobs_comptests(context):
 
     # get testing configuration directory 
     from pkg_resources import resource_filename  # @UnresolvedImport
-    dirname = resource_filename("dataset_turtle_dvs", "configs")
+    dirname = resource_filename("dataset_caltech_er1", "configs")
     
     # load into rawlogs config
     from rawlogs import get_rawlogs_config
